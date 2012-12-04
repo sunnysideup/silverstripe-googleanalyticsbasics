@@ -7,15 +7,10 @@
 
 
 //copy the lines between the START AND END line to your /mysite/_config.php file and choose the right settings
-//===================---------------- START googleAnalyticsbasics MODULE ----------------===================
+//===================---------------- START googleanalyticsbasics MODULE ----------------===================
 //MUST SET
-//Object::add_extension('SiteTree', 'GoogleAnalytics');
-//GoogleAnalytics::$googleAnalyticsCode = ""; //e.g. UA-xxxx-y
+//Object::add_extension('SiteTree', 'GoogleAnalyticsSTE');
+//GoogleAnalyticsSTE::$main_code = ''; //e.g. UA-xxxx-y
 //MAY SET - to track downloads - you may want to add this to your Page_Controller::init
-//Requirements::javascript("googleanalyticsbasics/javascript/trackDownloads.js");
-//===================---------------- END googleAnalyticsbasics MODULE ----------------===================
-
-
-
-
-
+//Requirements::javascript('googleanalyticsbasics/javascript/trackDownloads.js');
+//===================---------------- END googleanalyticsbasics MODULE ----------------===================
