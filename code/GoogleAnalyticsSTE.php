@@ -1,9 +1,12 @@
 <?php
 
 class GoogleAnalyticsSTE extends SiteTreeExtension {
-	
-	static $main_code;
-	static $optional_code;
+
+	protected static $main_code;
+		static function set_main_code($s) {self::$main_code = $s;}
+
+	protected static $optional_code;
+		static function set_optional_code($s) {self::$optional_code = $s;}
 
 	function GAMainCode() {
 		if(Director::isLive()) {
