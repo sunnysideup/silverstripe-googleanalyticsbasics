@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/googleanalyticsbasics",
+	"name": "sunnysideup/googleanalyticsbasics",
 	"type": "silverstripe-module",
 	"description": "add google analytics to your Silverstripe website",
 	"homepage": "http://www.silverstripe-webdevelopment.com",
