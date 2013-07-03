@@ -2,21 +2,23 @@
 
 class GoogleAnalyticsSTE extends SiteTreeExtension {
 
-	protected static $main_code;
-		static function set_main_code($s) {self::$main_code = $s;}
+	private static $main_code;
 
-	protected static $optional_code;
-		static function set_optional_code($s) {self::$optional_code = $s;}
+	private static $site_name;
+
+	private static $optional_code;
 
 	function GAMainCode() {
 		if(Director::isLive()) {
-			return self::$main_code;
+			return Config::inst()->get("GoogleAnalyticsSTE", "main_code");
 		}
 	}
 
-	function GAOptionalCode() {
+	function GAMainSite() {
 		if(Director::isLive()) {
-			return self::$optional_code;
+			return Config::inst()->get("GoogleAnalyticsSTE", "site_name");
 		}
 	}
+
+
 }
