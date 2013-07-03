@@ -6,8 +6,6 @@ class GoogleAnalyticsSTE extends SiteTreeExtension {
 
 	private static $site_name;
 
-	private static $optional_code;
-
 	function GAMainCode() {
 		if(Director::isLive()) {
 			return Config::inst()->get("GoogleAnalyticsSTE", "main_code");
