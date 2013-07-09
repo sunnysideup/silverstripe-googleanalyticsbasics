@@ -2,6 +2,11 @@
 # START GOOGLE ANALYTICS
 #########################
 
+SiteTree:
+  extensions:
+    - GoogleAnalyticsSTE
+
+
 ##REQUIRED##
 
 #GoogleAnalyticsSTE:
