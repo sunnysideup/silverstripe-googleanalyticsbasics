@@ -1,0 +1,11 @@
+################################
+# START GOOGLE ANALYTICS
+################################
+
+GoogleAnalytics:
+  optional_code: '' #e.g. UA-xxxx-y
+
+
+################################
+# END GOOGLE ANALYTICS
+################################
