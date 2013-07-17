@@ -4,6 +4,7 @@
 
 GoogleAnalytics:
   optional_code: '' #e.g. UA-xxxx-y
+  main_site_name: '' #e.g. mysite.co.nz
 
 
 ################################
