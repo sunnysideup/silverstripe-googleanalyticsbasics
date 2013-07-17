@@ -7,16 +7,6 @@ SiteTree:
     - GoogleAnalyticsSTE
 
 
-##REQUIRED##
-
-#GoogleAnalyticsSTE:
-  #main_code: 1234
-
-#GoogleAnalyticsSTE:
-  #site_name: 'bla'
-
-##OPTIONAL##
-
 #########################
 # END GOOGLE ANALYTICS
 #########################
