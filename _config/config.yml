@@ -1,11 +1,12 @@
-#########################
-# START GOOGLE ANALYTICS
-#########################
+
 
 SiteTree:
   extensions:
     - GoogleAnalyticsSTE
 
+#########################
+# START GOOGLE ANALYTICS
+#########################
 
 #########################
 # END GOOGLE ANALYTICS
