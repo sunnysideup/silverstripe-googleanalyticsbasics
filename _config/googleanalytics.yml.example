@@ -2,11 +2,10 @@
 # START GOOGLE ANALYTICS
 ################################
 
-GoogleAnalytics:
-# Must Set
-  optional_code: '' #e.g. UA-xxxx-y
+GoogleAnalyticsSTE:
+  main_code: '' #e.g. UA-xxxx-y
 #May Set
-  main_site_name: '' #e.g. mysite.co.nz MAKE SURE THIS MATCHES WITH GA code ... ypou
+  main_site_name: '' #e.g. mysite.co.nz MAKE SURE THIS MATCHES WITH GA code ... 
 
 
 ################################
