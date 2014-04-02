@@ -3,7 +3,7 @@
 	"type": "silverstripe-module",
 	"description": "add google analytics to your Silverstripe website",
 	"homepage": "https://github.com/sunnysideup/silverstripe-googleanalyticsbasics",
-	"keywords": ["googleanalyticsbasics", "silverstripe"],
+	"keywords": ["googleanalyticsbasics", "silverstripe", "analytics", "google", "visitors", "statistics"],
 	"license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
 	"authors":[
 		{
@@ -15,7 +15,7 @@
 	],
 	"require":{
 		"silverstripe/framework": "~3.1",
-		"silverstripe/cms": "~3.1",
+		"silverstripe/cms": "~3.1"
 	},
 	"extra": {
 		"installer-name": "googleanalyticsbasics"
