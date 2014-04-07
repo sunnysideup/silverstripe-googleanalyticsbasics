@@ -36,7 +36,7 @@ Installation Instructions
 2. Review configs and add entries to mysite/_config/config.yml
 (or similar) as necessary.
 In the _config/ folder of this module
-you should to find some examples of config options (if any).
+you can usually find some examples of config options (if any).
 
 3. Add GoogleAnalyticsCode to the bottom of your page
 by adding <% include Analytics %> to the end of your
