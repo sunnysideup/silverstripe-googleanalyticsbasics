@@ -1,6 +1,4 @@
-###############################################
-Google Analytics Basics
-###############################################
+Google Analytics Basics================================================================================
 
 Adds google analytics to your website. We use this module
 so that when google analytics upgrades its JS code (which has happened many times)
