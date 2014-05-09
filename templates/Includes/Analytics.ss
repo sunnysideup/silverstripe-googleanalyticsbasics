@@ -25,11 +25,11 @@
 	</script>
 <% else %>
 	<div style="background-color: yellow; height: 100px; color: red; clear: both; margin: 0; padding: 10px; text-align: center;" id="GoogleAnalyticsFooter">
-		Please note: this site ($GAMainSite) is currently undergoing maintenance.
+		Please note: this site (<% if GAMainSite %>$GAMainSite<% else %>no GA Name<% end_if %>) is currently undergoing maintenance.
 		<% if CurrentMember %>
 			Welcome Back, {$CurrentMember.Name}.
-			<% if CurrentMember.IsAdmin %>
-				Please click <a href="/admin/show/$ID/" style="color: red;">here</a> to edit this page in CMS.
+			<% if CurrentMember %>
+				Please click <a href="/admin/pages/edit/show/$ID/" style="color: red;">here</a> to edit this page in CMS.
 			<% end_if  %>
 		<% else  %>
 			You are not logged in.
