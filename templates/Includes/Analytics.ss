@@ -1,4 +1,4 @@
-<% if GAMainCode %>
+<% if GAMainIsOn %>
 	<script type="text/javascript">
 <% if GAMainSite %>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,15 +24,14 @@
 <% end_if %>
 	</script>
 <% else %>
-	<div style="background-color: yellow; height: 100px; color: red; clear: both; margin: 0; padding: 10px; text-align: center;" id="GoogleAnalyticsFooter">
-		Please note: this site (<% if GAMainSite %>$GAMainSite<% else %>no GA Name<% end_if %>) is currently undergoing maintenance.
+	<div style="background-color: yellow; height: 17px; position: fixed; bottom: 0; left: 0; right: 0; color: red; padding: 7px 0 0 0; text-align: center; font-size: 10px; " id="GoogleAnalyticsFooter">
+		<u><strong>UNDERGOING MAINTENANCE:</strong></u>
+		<strong>Google Analytics</strong> $GAMainCode, Tracking: <% if GAMainSite %>$GAMainSite<% else %>anything<% end_if %>.
 		<% if CurrentMember %>
-			Welcome Back, {$CurrentMember.Name}.
-			<% if CurrentMember %>
-				Please click <a href="/admin/pages/edit/show/$ID/" style="color: red;">here</a> to edit this page in CMS.
-			<% end_if  %>
+			 Logged in as {$CurrentMember.Name}.
 		<% else  %>
-			You are not logged in.
+			Not logged in.
 		<% end_if  %>
+		<a href="/admin/pages/edit/show/$ID/" style="color: red;">Edit this Page</a>
 	</div>
 <% end_if %>

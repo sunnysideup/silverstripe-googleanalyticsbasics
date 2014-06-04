@@ -6,16 +6,16 @@ class GoogleAnalyticsSTE extends SiteTreeExtension {
 
 	private static $site_name;
 
+	function GAMainIsOn() {
+		return Director::isLive();
+	}
+
 	function GAMainCode() {
-		if(Director::isLive()) {
-			return Config::inst()->get("GoogleAnalyticsSTE", "main_code");
-		}
+		return Config::inst()->get("GoogleAnalyticsSTE", "main_code");
 	}
 
 	function GAMainSite() {
-		if(Director::isLive()) {
-			return Config::inst()->get("GoogleAnalyticsSTE", "site_name");
-		}
+		return Config::inst()->get("GoogleAnalyticsSTE", "site_name");
 	}
 
 
