@@ -25,7 +25,7 @@
 	</script>
 <% else %>
 	<div style="background-color: yellow; height: 17px; position: fixed; bottom: 0; left: 0; right: 0; color: red; padding: 7px 0 0 0; text-align: center; font-size: 10px; " id="GoogleAnalyticsFooter">
-		<u><strong>UNDERGOING MAINTENANCE:</strong></u>
+		<strong>UNDERGOING MAINTENANCE:</strong>
 		<strong>Google Analytics</strong> $GAMainCode, Tracking: <% if GAMainSite %>$GAMainSite<% else %>anything<% end_if %>.
 		<% if CurrentMember %>
 			 Logged in as {$CurrentMember.Name}.
