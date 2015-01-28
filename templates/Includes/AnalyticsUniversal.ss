@@ -24,6 +24,7 @@
 <% end_if %>
 	</script>
 <% else %>
+	<% if ShowAnnoyingYellowBar %>
 	<div style="background-color: yellow; height: 100px; color: red; clear: both; margin: 0; padding: 10px; text-align: center;" id="GoogleAnalyticsFooter">
 		Please note: this site ($GAMainSite) is currently undergoing maintenance.
 		<% if CurrentMember %>
@@ -35,4 +36,5 @@
 			You are not logged in.
 		<% end_if  %>
 	</div>
+	<% end_if %>
 <% end_if %>
