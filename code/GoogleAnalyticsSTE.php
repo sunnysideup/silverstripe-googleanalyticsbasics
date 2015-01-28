@@ -37,7 +37,7 @@ class GoogleAnalyticsSTE extends SiteTreeExtension {
 	 * @return Boolean
 	 */
 	public function ShowAnnoyingYellowBar(){
-		return $this->Config()->get("show_really_annoying_yellow_bar");
+		return $this->owner->Config()->get("show_really_annoying_yellow_bar");
 	}
 
 
