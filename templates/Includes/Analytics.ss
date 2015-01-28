@@ -24,6 +24,7 @@
 <% end_if %>
 	</script>
 <% else %>
+	<% if ShowAnnoyingYellowBar %>
 	<div style="background-color: yellow; height: 17px; position: fixed; bottom: 0; left: 0; right: 0; color: red; padding: 7px 0 0 0; text-align: center; font-size: 10px; " id="GoogleAnalyticsFooter">
 		<strong>UNDERGOING MAINTENANCE:</strong>
 		<strong>Google Analytics</strong> $GAMainCode, Tracking: <% if GAMainSite %>$GAMainSite<% else %>anything<% end_if %>.
@@ -34,4 +35,5 @@
 		<% end_if  %>
 		<a href="/admin/pages/edit/show/$ID/" style="color: red;">Edit this Page</a>
 	</div>
+	<% end_if %>
 <% end_if %>
