@@ -24,7 +24,7 @@
 <% end_if %>
 	</script>
 <% else %>
-	<% if ShowAnnoyingYellowBar %>
+	<% if ShowReallyAnnoyingYellowBar %>
 	<div style="background-color: yellow; height: 100px; color: red; clear: both; margin: 0; padding: 10px; text-align: center;" id="GoogleAnalyticsFooter">
 		Please note: this site ($GAMainSite) is currently undergoing maintenance.
 		<% if CurrentMember %>
