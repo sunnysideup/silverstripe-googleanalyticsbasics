@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/var/www/_modules/googleanalyticsbasics/trunk">
+  <namespace name="">
+    <class name="GoogleAnalyticsSTE" src="code/GoogleAnalyticsSTE.php" xml="classes/GoogleAnalyticsSTE.xml"/>
+  </namespace>
+</index>

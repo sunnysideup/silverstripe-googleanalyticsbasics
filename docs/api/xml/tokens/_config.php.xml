@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/_modules/googleanalyticsbasics/trunk/docs/en/phpdox/../../.." file="_config.php" realpath="/var/www/_modules/googleanalyticsbasics/trunk/_config.php" size="290" time="2015-03-14T10:23:54+13:00" unixtime="1426281834" sha1="3cbd4ac66ae11be2220967b73cd5fe618a3de44c" relative="_config.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * developed by www.sunnysideup.co.nz</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * author: Nicolaas - modules [at] sunnysideup.co.nz</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT">**/</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_COMMENT">//MAY SET</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">// - to track downloads - you may want to add this to your Page_Controller::init</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">//Requirements::javascript('googleanalyticsbasics/javascript/trackDownloads.js');</token>
+  </line>
+  <line no="11"/>
+</source>

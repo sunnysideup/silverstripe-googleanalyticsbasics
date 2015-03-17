@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="GoogleAnalyticsSTE" namespace="" name="GoogleAnalyticsSTE" abstract="false" final="false" start="3" end="44">
+  <file path="/var/www/_modules/googleanalyticsbasics/trunk/docs/en/phpdox/../../../code" file="GoogleAnalyticsSTE.php" realpath="/var/www/_modules/googleanalyticsbasics/trunk/code/GoogleAnalyticsSTE.php" size="698" time="2015-03-14T10:23:54+13:00" unixtime="1426281834" sha1="bb74d61397f1409bbdcf2ae29da342f949978317" relative="code/GoogleAnalyticsSTE.php"/>
+  <extends full="SiteTreeExtension" namespace="" name="SiteTreeExtension"/>
+  <member name="main_code" type="{unknown}" visibility="private" line="9">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="String" namespace="" name="String"/>
+      </return>
+    </docblock>
+  </member>
+  <member name="site_name" type="{unknown}" visibility="private" line="15">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="String" namespace="" name="String"/>
+      </return>
+    </docblock>
+  </member>
+  <member name="show_really_annoying_yellow_bar" type="{unknown}" default="true" visibility="private" line="21">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="String" namespace="" name="String"/>
+      </return>
+    </docblock>
+  </member>
+  <method name="GAMainIsOn" start="23" end="25" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="GAMainCode" start="27" end="29" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="GAMainSite" start="31" end="33" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="ShowReallyAnnoyingYellowBar" start="39" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </return>
+    </docblock>
+  </method>
+</class>
