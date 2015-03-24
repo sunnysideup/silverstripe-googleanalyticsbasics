@@ -1,5 +1,5 @@
 ################################
-# START GOOGLE ANALYTICS
+# GOOGLE ANALYTICS
 ################################
 
 GoogleAnalyticsSTE:
@@ -9,5 +9,4 @@ GoogleAnalyticsSTE:
   show_really_annoying_yellow_bar: false
 
 ################################
-# END GOOGLE ANALYTICS
 ################################
