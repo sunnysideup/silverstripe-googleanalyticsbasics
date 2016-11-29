@@ -1,6 +1,7 @@
 <?php
 
-class GoogleAnalyticsSTE extends SiteTreeExtension {
+class GoogleAnalyticsSTE extends SiteTreeExtension
+{
 
     /**
      *
@@ -20,17 +21,17 @@ class GoogleAnalyticsSTE extends SiteTreeExtension {
      */
     private static $show_really_annoying_yellow_bar = false;
 
-    function GAMainIsOn()
+    public function GAMainIsOn()
     {
         return Director::isLive();
     }
 
-    function GAMainCode()
+    public function GAMainCode()
     {
         return Config::inst()->get("GoogleAnalyticsSTE", "main_code");
     }
 
-    function GAMainSite()
+    public function GAMainSite()
     {
         return Config::inst()->get("GoogleAnalyticsSTE", "site_name");
     }
@@ -43,6 +44,4 @@ class GoogleAnalyticsSTE extends SiteTreeExtension {
     {
         return Config::inst()->get("GoogleAnalyticsSTE", "show_really_annoying_yellow_bar");
     }
-
-
 }
