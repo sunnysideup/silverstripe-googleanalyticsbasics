@@ -1,7 +1,2 @@
-
-
 SiteTree:
-  extensions:
-    - GoogleAnalyticsSTE
-
-
+    extensions: [GoogleAnalyticsSTE]

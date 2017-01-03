@@ -1,44 +1,72 @@
-Google Analytics Basics
-================================================================================
+# Silverstripe googleanalyticsbasics module
+[![Build Status](https://travis-ci.org/sunnysideup/silverstripe-googleanalyticsbasics.svg?branch=master)](https://travis-ci.org/sunnysideup/silverstripe-googleanalyticsbasics)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sunnysideup/silverstripe-googleanalyticsbasics/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sunnysideup/silverstripe-googleanalyticsbasics/?branch=master)
+[![codecov.io](https://codecov.io/github/sunnysideup/silverstripe-googleanalyticsbasics/coverage.svg?branch=master)](https://codecov.io/github/sunnysideup/silverstripe-googleanalyticsbasics?branch=master)
+![helpfulrobot](https://helpfulrobot.io/sunnysideup/googleanalyticsbasics/badge)
 
-Adds google analytics to your website. We use this module
-so that when google analytics upgrades its JS code (which has happened many times)
-we can upgrade this module and thereby all our websites.
-
-
-Developer
------------------------------------------------
-Nicolaas Francken [at] sunnysideup.co.nz
+[![Latest Stable Version](https://poser.pugx.org/sunnysideup/googleanalyticsbasics/version)](https://packagist.org/packages/sunnysideup/googleanalyticsbasics)
+[![License](https://poser.pugx.org/sunnysideup/googleanalyticsbasics/license)](https://packagist.org/packages/sunnysideup/googleanalyticsbasics)
+[![Monthly Downloads](https://poser.pugx.org/sunnysideup/googleanalyticsbasics/d/monthly)](https://packagist.org/packages/sunnysideup/googleanalyticsbasics)
 
 
-Requirements
------------------------------------------------
-see composer.json
-
-
-Documentation
------------------------------------------------
-Please contact author for more details.
-
-Any bug reports and/or feature requests will be
-looked at in detail
-
-We are also very happy to provide personalised support
-for this module in exchange for a small donation.
+## Documentation
 
 
 
+ * [Developer Docs](docs/en/INDEX.md)
+ * [User Guide](docs/en/userguide.md)
+ * [API](http://ssmods.com/apis/googleanalyticsbasics/docs/en/api/)
 
-Installation Instructions
------------------------------------------------
+## Requirements
 
-1. Find out how to add modules to SS and add module as per usual.
 
-2. Review configs and add entries to mysite/_config/config.yml
-(or similar) as necessary.
-In the _config/ folder of this module
-you can usually find some examples of config options (if any).
 
-3. Add GoogleAnalyticsCode to the bottom of your page
-by adding <% include Analytics %> to the end of your
-page template (but before </body>)
+see [composer.json](composer.json) for details
+
+### Suggested Modules
+
+
+
+see [composer.json](composer.json) for details
+
+
+## Installation
+
+
+```
+composer require sunnysideup/googleanalyticsbasics
+```
+
+### Configuration
+
+
+
+In the `_config` folder you will find the `googleanalyticsbasics.yml.example`
+file that shows options for the configuration of this module.
+
+We recommend that you:
+
+  1. copy these `googleanalyticsbasics.yml.example` files into your
+`mysite/_config` folder
+  2. remove the .example extension
+  3. delete the lines you not care about, and
+  4. adjust the configurations that you would like to use.
+
+
+## Contributing
+
+
+
+We welcome any contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## Paid assistance
+
+
+
+You can pay us to create an improved / adapted version of this module for your own projects.  Please contact us if you like to find out more: [www.sunnysideup.co.nz](http://www.sunnysideup.co.nz)
+
+## Author
+
+
+
+Sunny Side Up Ltd.
