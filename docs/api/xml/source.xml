@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<source xmlns="http://xml.phpdox.net/src">
-  <dir name="/var/www/_modules/googleanalyticsbasics/trunk">
-    <file name="_config.php" size="290" time="2015-03-14T10:23:54+13:00" unixtime="1426281834" sha1="3cbd4ac66ae11be2220967b73cd5fe618a3de44c" xml="tokens/_config.php.xml"/>
-    <dir name="code">
-      <file name="GoogleAnalyticsSTE.php" size="698" time="2015-03-14T10:23:54+13:00" unixtime="1426281834" sha1="bb74d61397f1409bbdcf2ae29da342f949978317" xml="tokens/code/GoogleAnalyticsSTE.php.xml"/>
-    </dir>
-  </dir>
-</source>
