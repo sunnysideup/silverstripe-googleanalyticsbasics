@@ -23,7 +23,7 @@ class GoogleAnalyticsSTE extends SiteTreeExtension
 
     public function GAMainIsOn()
     {
-        return Director::isLive();
+        return Director::isLive() || isset($_GET['testanalytics']);
     }
 
     public function GAMainCode()
