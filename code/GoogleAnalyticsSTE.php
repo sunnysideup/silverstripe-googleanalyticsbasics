@@ -44,4 +44,11 @@ class GoogleAnalyticsSTE extends SiteTreeExtension
     {
         return Config::inst()->get("GoogleAnalyticsSTE", "show_really_annoying_yellow_bar");
     }
+
+    public function InsertGoogleAnalyticsAsHeadTag()
+    {
+        Requirements::insertHeadTags($this->owner->renderWith('Analytics'));
+    }
+
+
 }
