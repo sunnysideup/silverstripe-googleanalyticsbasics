@@ -1,10 +1,13 @@
+
+
 ################################
 # GOOGLE ANALYTICS
 ################################
 
 GoogleAnalyticsSTE:
   main_code: '' #e.g. UA-xxxx-y
-#May Set
+
+  #May Set
   main_site_name: '' #e.g. mysite.co.nz MAKE SURE THIS MATCHES WITH GA code ...
   show_really_annoying_yellow_bar: false
 
