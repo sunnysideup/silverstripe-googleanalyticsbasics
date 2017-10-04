@@ -50,5 +50,11 @@ class GoogleAnalyticsSTE extends SiteTreeExtension
         Requirements::insertHeadTags($this->owner->renderWith('Analytics'));
     }
 
-
+    public function canEditThisPage()
+    {
+        $member = Member::currentUser();
+        if ($member) {
+            return $this->owner->canEdit($member);
+        }
+    }
 }

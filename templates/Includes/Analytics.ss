@@ -14,7 +14,7 @@
     This site is currently undergoing maintenance.
         <% if CurrentMember %>
         Welcome Back, {$CurrentMember.Name}.
-        <% if CurrentMember.IsAdmin %>
+        <% if $canEditThisPage %>
             Please click <a href="/admin/show/$ID/" style="color: red;">here</a> to edit this page in CMS.
         <% end_if  %>
         <% else  %>
