@@ -54,7 +54,7 @@ class GoogleAnalyticsSTE extends SiteTreeExtension
     {
         $member = Member::currentUser();
         if ($member) {
-            return $this->owner->canEdit($member);
+            return $this->owner->dataRecord->canEdit($member);
         }
     }
 }
