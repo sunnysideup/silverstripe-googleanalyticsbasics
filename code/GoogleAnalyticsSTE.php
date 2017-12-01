@@ -1,6 +1,6 @@
 <?php
 
-class GoogleAnalyticsSTE extends SiteTreeExtension
+class GoogleAnalyticsSTE extends Extension
 {
 
     /**
