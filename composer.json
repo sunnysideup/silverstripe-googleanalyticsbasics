@@ -1,6 +1,6 @@
 {
     "name": "sunnysideup/googleanalyticsbasics",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "description": "add google analytics to your Silverstripe website",
     "keywords": [
         "Silverstripe-CMS",
