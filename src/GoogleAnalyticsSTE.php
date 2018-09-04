@@ -1,5 +1,14 @@
 <?php
 
+namespace Sunnysideup\GoogleAnalyticsBasics;
+
+use Extension;
+use Director;
+use Config;
+use Requirements;
+use Member;
+
+
 class GoogleAnalyticsSTE extends Extension/*
 ### @@@@ START UPGRADE REQUIRED @@@@ ###
 FIND:  extends Extension
