@@ -2,11 +2,18 @@
 
 namespace Sunnysideup\GoogleAnalyticsBasics;
 
-use Extension;
-use Director;
-use Config;
-use Requirements;
-use Member;
+
+
+
+
+
+use SilverStripe\Control\Director;
+use SilverStripe\Core\Config\Config;
+use Sunnysideup\GoogleAnalyticsBasics\GoogleAnalyticsSTE;
+use SilverStripe\View\Requirements;
+use SilverStripe\Security\Member;
+use SilverStripe\Core\Extension;
+
 
 
 class GoogleAnalyticsSTE extends Extension/*
@@ -42,12 +49,12 @@ NOTE: Check for use of $this->anyVar and replace with $this->anyVar[$this->owner
 
     public function GAMainCode()
     {
-        return Config::inst()->get("GoogleAnalyticsSTE", "main_code");
+        return Config::inst()->get(GoogleAnalyticsSTE::class, "main_code");
     }
 
     public function GAMainSite()
     {
-        return Config::inst()->get("GoogleAnalyticsSTE", "site_name");
+        return Config::inst()->get(GoogleAnalyticsSTE::class, "site_name");
     }
 
     /**
@@ -56,7 +63,7 @@ NOTE: Check for use of $this->anyVar and replace with $this->anyVar[$this->owner
      */
     public function ShowReallyAnnoyingYellowBar()
     {
-        return Config::inst()->get("GoogleAnalyticsSTE", "show_really_annoying_yellow_bar");
+        return Config::inst()->get(GoogleAnalyticsSTE::class, "show_really_annoying_yellow_bar");
     }
 
     public function InsertGoogleAnalyticsAsHeadTag()
