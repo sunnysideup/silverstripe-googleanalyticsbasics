@@ -1,2 +1,6 @@
-ContentController:
-    extensions: [GoogleAnalyticsSTE]
+---
+name: GoogleAnalyticsBasics
+---
+SilverStripe\CMS\Controllers\ContentController:
+    extensions:
+        - Sunnysideup\GoogleAnalyticsBasics\GoogleAnalyticsSTE
