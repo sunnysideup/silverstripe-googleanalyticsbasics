@@ -56,7 +56,7 @@ class GoogleAnalyticsSTE extends Extension
 
     public function InsertGoogleAnalyticsAsHeadTag()
     {
-        Requirements::insertHeadTags($this->owner->renderWith('Analytics'));
+        Requirements::insertHeadTags($this->owner->renderWith('Includes/Analytics'));
     }
 
     public function canEditThisPage()
