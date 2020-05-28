@@ -61,7 +61,7 @@ class GoogleAnalyticsSTE extends Extension
 
     public function canEditThisPage()
     {
-        $member = Member::currentUser();
+        $member = Security::getCurrentUser();
         if ($member) {
             return $this->owner->dataRecord->canEdit($member);
         }
