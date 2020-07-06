@@ -24,5 +24,10 @@
         "silverstripe/framework": "~4.0",
         "silverstripe/recipe-cms": "*"
     },
-    "extra": []
+    "extra": [],
+    "autoload": {
+        "psr-4": {
+            "Sunnysideup\\GoogleAnalyticsBasics\\": "src/"
+        }
+    }
 }
