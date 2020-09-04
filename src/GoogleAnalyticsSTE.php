@@ -4,29 +4,23 @@ namespace Sunnysideup\GoogleAnalyticsBasics;
 
 use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
-use Sunnysideup\GoogleAnalyticsBasics\GoogleAnalyticsSTE;
-use SilverStripe\View\Requirements;
-use SilverStripe\Security\Member;
 use SilverStripe\Core\Extension;
+use SilverStripe\View\Requirements;
 
 class GoogleAnalyticsSTE extends Extension
 {
-
     /**
-     *
-     * @return String
+     * @return string
      */
     private static $main_code;
 
     /**
-     *
-     * @return String
+     * @return string
      */
     private static $site_name;
 
     /**
-     *
-     * @return String
+     * @return string
      */
     private static $show_really_annoying_yellow_bar = false;
 
@@ -37,21 +31,20 @@ class GoogleAnalyticsSTE extends Extension
 
     public function GAMainCode()
     {
-        return Config::inst()->get(GoogleAnalyticsSTE::class, "main_code");
+        return Config::inst()->get(GoogleAnalyticsSTE::class, 'main_code');
     }
 
     public function GAMainSite()
     {
-        return Config::inst()->get(GoogleAnalyticsSTE::class, "site_name");
+        return Config::inst()->get(GoogleAnalyticsSTE::class, 'site_name');
     }
 
     /**
-     *
-     * @return Boolean
+     * @return boolean
      */
     public function ShowReallyAnnoyingYellowBar()
     {
-        return Config::inst()->get(GoogleAnalyticsSTE::class, "show_really_annoying_yellow_bar");
+        return Config::inst()->get(GoogleAnalyticsSTE::class, 'show_really_annoying_yellow_bar');
     }
 
     public function InsertGoogleAnalyticsAsHeadTag()
