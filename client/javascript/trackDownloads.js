@@ -8,26 +8,26 @@
 
 (function($) {
 
-	jQuery(document).ready(
-		function() {
-			googleanalytics.dlTracking();
-		}
-	);
+    jQuery(document).ready(
+        function() {
+            googleanalytics.dlTracking();
+        }
+    );
 
-	var googleanalytics = {
+    var googleanalytics = {
 
-		dlTracking: function() {
-			jQuery('a').each(
-				function() {
-					var href = jQuery(this).attr('href');
-					if(typeof(href) != 'undefined' && href.match(/^assets\//)) {
-						jQuery(this).click(function() {
-							_gaq.push(['_trackEvent', 'Downloads', href.replace(/^assets\//i, '')]);
-						});
-					}
-				}
-			);
-		}
-	}
+        dlTracking: function() {
+            jQuery('a').each(
+                function() {
+                    var href = jQuery(this).attr('href');
+                    if(typeof(href) != 'undefined' && href.match(/^assets\//)) {
+                        jQuery(this).click(function() {
+                            _gaq.push(['_trackEvent', 'Downloads', href.replace(/^assets\//i, '')]);
+                        });
+                    }
+                }
+            );
+        }
+    }
 
 })(jQuery);
