@@ -49,14 +49,14 @@ class GoogleAnalyticsSTE extends Extension
 
     public function InsertGoogleAnalyticsAsHeadTag()
     {
-        Requirements::insertHeadTags($this->owner->renderWith('Includes/Analytics'));
+        Requirements::insertHeadTags($this->getOwner()->renderWith('Includes/Analytics'));
     }
 
     public function canEditThisPage()
     {
         $member = Security::getCurrentUser();
         if ($member) {
-            return $this->owner->dataRecord->canEdit($member);
+            return $this->getOwner()->dataRecord->canEdit($member);
         }
     }
 }
