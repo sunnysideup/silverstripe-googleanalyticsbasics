@@ -7,6 +7,8 @@ use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Extension;
 use SilverStripe\View\Requirements;
 
+use SilverStripe\Security\Security;
+
 class GoogleAnalyticsSTE extends Extension
 {
     /**
