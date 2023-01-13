@@ -5,9 +5,8 @@ namespace Sunnysideup\GoogleAnalyticsBasics;
 use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Extension;
-use SilverStripe\View\Requirements;
-
 use SilverStripe\Security\Security;
+use SilverStripe\View\Requirements;
 
 class GoogleAnalyticsSTE extends Extension
 {
