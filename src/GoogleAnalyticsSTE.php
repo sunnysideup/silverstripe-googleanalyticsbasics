@@ -30,6 +30,11 @@ class GoogleAnalyticsSTE extends Extension
      */
     private static $show_really_annoying_yellow_bar = false;
 
+    /**
+     * @return string
+     */
+    private static $use_gtag = false;
+
     public function GAMainIsOn()
     {
         return Director::isLive() || isset($_GET['testanalytics']);
@@ -45,6 +50,11 @@ class GoogleAnalyticsSTE extends Extension
         return Config::inst()->get(GoogleAnalyticsSTE::class, 'site_name');
     }
 
+    public function UseGTag()
+    {
+        return Config::inst()->get(GoogleAnalyticsSTE::class, 'use_gtag');
+    }
+
     /**
      * @return bool
      */
@@ -55,7 +65,11 @@ class GoogleAnalyticsSTE extends Extension
 
     public function InsertGoogleAnalyticsAsHeadTag()
     {
-        Requirements::insertHeadTags($this->getOwner()->renderWith('Includes/Analytics'));
+        if ($this->UseGTag()) {
+            Requirements::insertHeadTags($this->getOwner()->renderWith('Includes/AnalyticsGTag'));
+        } else {
+            Requirements::insertHeadTags($this->getOwner()->renderWith('Includes/Analytics'));
+        }
     }
 
     public function canEditThisPage()

@@ -6,6 +6,7 @@
 
 Sunnysideup\GoogleAnalyticsBasics\GoogleAnalyticsSTE:
   main_code: '' #e.g. UA-xxxx-y
+  use_gtag: false #set to true to use gtag.js with GA4
 
   #May Set
   main_site_name: '' #e.g. app.co.nz MAKE SURE THIS MATCHES WITH GA code ...
