@@ -78,5 +78,6 @@ class GoogleAnalyticsSTE extends Extension
         if ($member) {
             return $this->getOwner()->dataRecord->canEdit($member);
         }
+        return null;
     }
 }
