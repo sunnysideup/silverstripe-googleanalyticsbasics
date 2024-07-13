@@ -28,7 +28,7 @@ class GoogleAnalyticsSTE extends Extension
     /**
      * @return string
      */
-    private static $show_really_annoying_yellow_bar = true;
+    private static $show_really_annoying_yellow_bar = false;
 
     /**
      * @return string
