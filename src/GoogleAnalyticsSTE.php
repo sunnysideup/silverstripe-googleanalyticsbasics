@@ -11,7 +11,7 @@ use SilverStripe\View\Requirements;
 /**
  * Class \Sunnysideup\GoogleAnalyticsBasics\GoogleAnalyticsSTE
  *
- * @property \SilverStripe\CMS\Controllers\ContentController|\Sunnysideup\GoogleAnalyticsBasics\GoogleAnalyticsSTE $owner
+ * @property ContentController|GoogleAnalyticsSTE $owner
  */
 class GoogleAnalyticsSTE extends Extension
 {
