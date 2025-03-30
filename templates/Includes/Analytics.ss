@@ -1,26 +1,31 @@
-<% if GAMainCode && GAMainIsOn %>
+<% if $GAMainCode && $GAMainIsOn %>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=$GAMainCode"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    const loadGTM  = function () {
+        window.setTimeout(function () {
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
 
-  gtag('config', '$GAMainCode');
+                var j = d.createElement(s),
+                    f = d.getElementsByTagName(s)[0],
+                    dl = l !== 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', '$GAMainCode');
+        });
+    }
+    const loadGTMOnInteraction = function () {
+        loadGTM();
+        window.removeEventListener('scroll', loadGTMOnInteraction);
+        window.removeEventListener('mousemove', loadGTMOnInteraction);
+        window.removeEventListener('touchstart', loadGTMOnInteraction);
+    }
+
+    window.addEventListener('scroll', loadGTMOnInteraction, { once: true });
+    window.addEventListener('mousemove', loadGTMOnInteraction, { once: true });
+    window.addEventListener('touchstart', loadGTMOnInteraction, { once: true });
 </script>
-//]]></script>
-<% else %>
-    <% if $ShowReallyAnnoyingYellowBar %>
-<div style="background-color: yellow; height: 100px; color: red; clear: both; margin: 0; padding: 10px; text-align: center;" id="GoogleAnalyticsFooter">
-    This site is currently undergoing maintenance.
-        <% if $CurrentMember %>
-        Welcome Back, {$CurrentMember.Name}.
-        <% if $canEditThisPage %>
-            Please click <a href="/admin/pages/edit/show/$ID/" style="color: red;">here</a> to edit this page in CMS.
-        <% end_if  %>
-        <% else  %>
-        You are not logged in.
-        <% end_if  %>
-</div>
-    <% end_if %>
 <% end_if %>
