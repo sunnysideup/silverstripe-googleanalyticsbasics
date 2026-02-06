@@ -4,7 +4,6 @@ namespace Sunnysideup\GoogleAnalyticsBasics;
 
 use SilverStripe\CMS\Controllers\ContentController;
 use SilverStripe\Control\Director;
-use SilverStripe\Control\RequestHandler;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Extension;
 use SilverStripe\View\Requirements;
@@ -20,7 +19,6 @@ class GoogleAnalyticsSTE extends Extension
      * @return string
      */
     private static $main_code;
-
 
     public function GAMainIsOn()
     {
