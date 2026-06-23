@@ -18,22 +18,53 @@ class GoogleAnalyticsSTE extends Extension
     /**
      * @return string
      */
-    private static $main_code;
+    private static ?string $main_code = null;
 
-    public function GAMainIsOn()
+    protected static $inserted = false;
+
+    public function GAMainIsOn(): bool
     {
         return Director::isLive() || isset($_GET['testanalytics']);
     }
 
-    public function GAMainCode()
+    public function GAMainCode(): string
     {
-        return Config::inst()->get(GoogleAnalyticsSTE::class, 'main_code');
+        return trim((string) Config::inst()->get(GoogleAnalyticsSTE::class, 'main_code'));
     }
 
-    public function InsertGoogleAnalyticsAsHeadTag()
+    public function onAfterInit()
+    {
+        $this->InsertGoogleAnalyticsAsHeadTag();
+    }
+
+    public function InsertGoogleAnalyticsAsHeadTag(): void
+    {
+        if (self::$inserted) {
+            return;
+        }
+        self::$inserted = true;
+        if ($this->GAMainIsOn() && $this->GAMainCode()) {
+            $owner = $this->getOwner();
+            $script = $owner->renderWith('Includes/Analytics');
+            Requirements::insertHeadTags($script, 'GoogleAnalyticsSTE');
+        }
+    }
+
+    /**
+     * Returns the Google tag type based on the configured ID prefix.
+     * 'gtm'   => Google Tag Manager container (GTM-XXXXXXX)
+     * 'gtag'  => GA4 / gtag.js (G-XXXXXXX, also AW-, UA-)
+     * ''      => no/invalid code
+     */
+    public function GAMainType(): string
     {
         $owner = $this->getOwner();
-        $script = $owner->renderWith('Includes/Analytics');
-        Requirements::insertHeadTags($script, 'GoogleAnalyticsSTE');
+        $code = trim((string) $owner->GAMainCode());
+
+        if ($code === '') {
+            return '';
+        }
+
+        return str_starts_with($code, 'GTM-') ? 'gtm' : 'gtag';
     }
 }
